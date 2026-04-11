@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+header {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(42, 41, 43, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.nav_right {
+  padding: 0 1rem;
+  display: flex;
+  gap: 1.3rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  transform: scale(1.19);
+  color: #ff9800;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero button {
+  padding: 0.7rem 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(224, 221, 221);
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 152, 0, 0.25),
+    rgba(255, 255, 255, 0.1)
+  );
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 250px;
+}
+
+.hero button:hover {
+  transform: scale(1.19);
+}
+
+.about p {
+  margin-top: 1rem;
+}
+
+.skill {
+  gap: 1rem;
+  text-align: center;
+}
+
+.skill_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.skill span {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(121, 119, 119);
+  border-radius: 20px;
+  transition: 0.2s;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.skill span:hover {
+  transform: scale(1.14);
+  color: rgb(174, 169, 184);
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(121, 119, 119);
+  border-radius: 20px;
+  width: 250px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.project_card:hover {
+  transform: scale(1.12);
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+}
+
+.email {
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(121, 119, 119);
+  border-radius: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  margin: 1rem auto;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+.email:hover {
+  transform: scale(1.19);
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+}
