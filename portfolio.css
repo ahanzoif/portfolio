@@ -44,19 +44,18 @@ nav {
   width: 30%;
 }
 
-.leftSection {
-  /* background-color: red; */
-}
-
 .leftSection span {
   color: lightgreen;
 }
 
 .rightSection img {
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
   border-radius: 50%;
-  /* object-fit: cover; */
+  object-fit: cover;
+  border: 4px solid #00f5d4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
