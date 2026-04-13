@@ -35,6 +35,35 @@ nav {
   gap: 1.3rem;
 }
 
+.name {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name div {
+  width: 30%;
+}
+
+.leftSection {
+  /* background-color: red; */
+}
+
+.leftSection span {
+  color: lightgreen;
+}
+
+.rightSection img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  transition: 0.3s;
+}
+
+.rightSection:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
 nav h1 {
   font-size: 1.5rem;
 }
@@ -52,7 +81,6 @@ nav a:hover {
 
 /* Sections */
 section {
- 
   padding: 2rem 2rem;
   text-align: center;
 }
@@ -156,7 +184,7 @@ h2 {
   width: 100%;
   height: auto;
   object-fit: contain;
-  background-color: #000; 
+  background-color: #000;
 }
 
 .project_content {
