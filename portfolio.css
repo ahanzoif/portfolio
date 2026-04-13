@@ -56,6 +56,22 @@ nav {
   color: lightgreen;
 }
 
+.intrest{
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.intrest li{
+  border: 2px solid beige;
+  border-radius: 30px ;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+
+}
+
 .rightSection img {
   height: auto;
   width: 100%;
