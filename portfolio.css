@@ -44,6 +44,14 @@ nav {
   width: 30%;
 }
 
+.leftSection{
+  font-size: 2rem;
+}
+
+.leftSection p{
+  margin: 20px 0;
+}
+
 .leftSection span {
   color: lightgreen;
 }
