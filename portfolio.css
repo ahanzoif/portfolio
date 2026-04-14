@@ -131,6 +131,23 @@ nav a:hover {
   transition: 0.3s;
 }
 
+.namebutton{
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.namebutton:hover {
+  transform: scale(1.1);
+  background: white;
+  color: black;
+}
+
 /* Sections */
 section {
   padding: 2rem 2rem;
