@@ -48,7 +48,7 @@ nav {
 }
 
 .leftSection {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .leftSection p {
@@ -67,6 +67,10 @@ nav {
   gap: 15px;
 }
 
+.intrest li a {
+  text-decoration: none;
+  color: white; /* optional, warna blue dikhega */
+}
 .intrest li {
   border: 2px solid beige;
   border-radius: 30px;
@@ -75,9 +79,12 @@ nav {
   font-size: 19px;
   white-space: nowrap;
   padding: 8px 16px;
+  cursor: pointer;
+  
 }
 
 .intrest li:hover {
+  transform: scale(1.1);
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
   box-shadow:
@@ -132,13 +139,6 @@ nav a:hover {
   transition: 0.3s;
 }
 
-.buttonContainer{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
 .namebutton{
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
@@ -148,6 +148,7 @@ nav a:hover {
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
  
 }
 
@@ -162,13 +163,15 @@ nav a:hover {
   transition: 0.3s;
 }
 
-/* Resume */
-
-.resumeContainer{
-  width: 100%;
+.buttonGroup {
   display: flex;
   justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
 }
+
+/* Resume */
+
 
 .resumebutton{
   padding: 0.6rem 1.2rem;
@@ -179,9 +182,10 @@ nav a:hover {
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.resumebutton{
+.resumebutton:hover{
   transform: scale(1.1);
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
@@ -191,6 +195,30 @@ nav a:hover {
   color: #e6ffff;
   transition: 0.3s;
 }
+
+.contactButton{
+ padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.contactButton:hover{
+  transform: scale(1.1);
+  background: rgba(0, 245, 212, 0.08); /* light glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow:
+  0 0 10px rgba(0, 245, 212, 0.4),
+  inset 0 0 10px rgba(0, 245, 212, 0.2);
+  color: #e6ffff;
+  transition: 0.3s;
+}
+
 
 /* Sections */
 section {
