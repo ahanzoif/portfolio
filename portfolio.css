@@ -37,11 +37,14 @@ nav {
 
 .name {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;           
+  justify-content: space-between;
+  align-items: center;
 }
 
-.name div {
-  width: 30%;
+.leftSection,
+.rightSection {
+  width: 45%;
 }
 
 .leftSection {
@@ -131,6 +134,15 @@ nav a:hover {
   transition: 0.3s;
 }
 
+.buttonContainer{
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
 .namebutton{
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
@@ -140,12 +152,19 @@ nav a:hover {
   color: white;
   cursor: pointer;
   transition: 0.3s;
+ 
 }
 
 .namebutton:hover {
   transform: scale(1.1);
-  background: white;
-  color: black;
+  background: rgba(0, 245, 212, 0.08); /* light glass effect */
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+  0 0 10px rgba(0, 245, 212, 0.4),
+  inset 0 0 10px rgba(0, 245, 212, 0.2);
+  color: #e6ffff;
+  transition: 0.3s;
 }
 
 /* Sections */
