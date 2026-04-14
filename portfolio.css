@@ -311,21 +311,36 @@ h2 {
 }
 
 /* Contact */
-.email {
-  margin-top: 1rem;
-  border: 1px solid #777;
-  border-radius: 20px;
-  width: 250px;
-  margin: 1rem auto;
-  padding: 0.8rem;
-  text-decoration: none;
-  color: white;
+.contactContainer {
+  margin-top: 20px;
   display: flex;
+  flex-direction: row;
+  gap: 15px;
   justify-content: center;
-  transition: 0.3s;
+  align-items: center;
 }
 
-.email:hover {
+.contactItem {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #777;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contactItem:hover {
   transform: scale(1.1);
-  background: linear-gradient(to right, #1f1c2c, #928dab);
+  background: rgba(0, 245, 212, 0.08); /* light glass effect */
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+  0 0 10px rgba(0, 245, 212, 0.4),
+  inset 0 0 10px rgba(0, 245, 212, 0.2);
+  color: #e6ffff;
+  transition: 0.3s;
 }
