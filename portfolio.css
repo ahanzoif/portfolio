@@ -37,7 +37,7 @@ nav {
 
 .name {
   display: flex;
-  flex-wrap: wrap;           
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -80,7 +80,6 @@ nav {
   white-space: nowrap;
   padding: 8px 16px;
   cursor: pointer;
-  
 }
 
 .intrest li:hover {
@@ -88,8 +87,8 @@ nav {
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
   box-shadow:
-  0 0 10px rgba(0, 245, 212, 0.4),
-  inset 0 0 10px rgba(0, 245, 212, 0.2);
+    0 0 10px rgba(0, 245, 212, 0.4),
+    inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
 }
@@ -103,8 +102,8 @@ nav {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   transition:
-  transform 0.4s ease,
-  box-shadow 0.4s ease;
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
   cursor: pointer;
 }
 
@@ -117,7 +116,7 @@ nav {
   transform: translateY(-10px) scale(1.03);
 }
 
-.summary{
+.summary {
   margin: 10px 0;
   font-size: 1rem;
   line-height: 1.5;
@@ -139,13 +138,13 @@ nav a:hover {
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
   box-shadow:
-  0 0 10px rgba(0, 245, 212, 0.4),
-  inset 0 0 10px rgba(0, 245, 212, 0.2);
+    0 0 10px rgba(0, 245, 212, 0.4),
+    inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
 }
 
-.namebutton{
+.namebutton {
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
   border: 1px solid white;
@@ -162,8 +161,8 @@ nav a:hover {
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
   box-shadow:
-  0 0 10px rgba(0, 245, 212, 0.4),
-  inset 0 0 10px rgba(0, 245, 212, 0.2);
+    0 0 10px rgba(0, 245, 212, 0.4),
+    inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
 }
@@ -177,8 +176,7 @@ nav a:hover {
 
 /* Resume */
 
-
-.resumebutton{
+.resumebutton {
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
   border: 1px solid white;
@@ -190,19 +188,19 @@ nav a:hover {
   text-decoration: none;
 }
 
-.resumebutton:hover{
+.resumebutton:hover {
   transform: scale(1.1);
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
   box-shadow:
-  0 0 10px rgba(0, 245, 212, 0.4),
-  inset 0 0 10px rgba(0, 245, 212, 0.2);
+    0 0 10px rgba(0, 245, 212, 0.4),
+    inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
 }
 
-.contactButton{
- padding: 0.6rem 1.2rem;
+.contactButton {
+  padding: 0.6rem 1.2rem;
   border-radius: 20px;
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.1);
@@ -213,17 +211,16 @@ nav a:hover {
   text-decoration: none;
 }
 
-.contactButton:hover{
+.contactButton:hover {
   transform: scale(1.1);
   background: rgba(0, 245, 212, 0.08); /* light glass effect */
   backdrop-filter: blur(10px);
   box-shadow:
-  0 0 10px rgba(0, 245, 212, 0.4),
-  inset 0 0 10px rgba(0, 245, 212, 0.2);
+    0 0 10px rgba(0, 245, 212, 0.4),
+    inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
 }
-
 
 /* Sections */
 section {
@@ -231,28 +228,28 @@ section {
   text-align: center;
 }
 
-
 /* About */
 
-.about{
+.about {
   margin-top: 40px;
   font-size: 1.3rem;
 }
 
-.about p{
+.about p {
   margin-top: 10px;
   color: gray;
   font-size: 19px;
 }
 
-.aboutGrid{
+.aboutGrid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 20px;
-  margin-top: 30px;
+  max-width: 800px;   /* overall width control */
+  margin: 30px auto; 
 }
 
-.aboutCard{
+.aboutCard {
   padding: 20px;
   border-radius: 15px;
   border: 1px solid #777;
@@ -262,96 +259,95 @@ section {
   transition: 0.3s;
 }
 
-.aboutCard:hover{
+.aboutCard:hover {
   transform: scale(1.02);
   box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
 }
 
-
 /* Skills */
 
-.skill{
+.skill {
   margin-top: 40px;
   font-size: 1.3rem;
 }
 
-.skill p{
+.skill p {
   margin-top: 10px;
   color: gray;
   font-size: 19px;
 }
 
-.skillCategory{
+.skillCategory {
   margin-top: 30px;
 }
 
-.skillCategory h3{
+.skillCategory h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: lightgreen;
 }
 
-.skill_Container{
+.skill_Container {
   margin: 25x;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 180px));
+  justify-content: center;
   gap: 20px;
 }
 
-.skillCard{
+.skillCard {
   padding: 20px;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   text-align: center;
   transition: 0.3s;
 }
 
-.skillCard:hover{
+.skillCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
 }
 
 /* Education */
-.education{
+.education {
   margin-top: 40px;
   font-size: 1.3rem;
 }
 
-.education p{
+.education p {
   margin-top: 10px;
   color: gray;
   font-size: 19px;
 }
 
-.educationCard .details{
+.educationCard .details {
   margin-top: 5px;
   display: flex;
- justify-content: center;
- align-items: center;
- gap: 15px;
- color: gray;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: gray;
 }
 
-.educationCard{
+.educationCard {
   width: 60%;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   text-align: center;
   transition: 0.3s;
 }
 
-.educationCard:hover{
+.educationCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
 }
-
 
 /* Projects */
 .projects {
@@ -453,8 +449,8 @@ section {
   backdrop-filter: blur(10px);
 
   box-shadow:
-  0 0 10px rgba(0, 245, 212, 0.4),
-  inset 0 0 10px rgba(0, 245, 212, 0.2);
+    0 0 10px rgba(0, 245, 212, 0.4),
+    inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
 }
