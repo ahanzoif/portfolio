@@ -286,12 +286,14 @@ section {
 }
 
 .skillCategory h3{
+  margin-top: 10px;
   margin-bottom: 10px;
   color: lightgreen;
 }
 
 .skill_Container{
-   display: grid;
+  margin: 25x;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 20px;
 }
@@ -302,7 +304,6 @@ section {
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(255,255,255,0.03);
   backdrop-filter: blur(10px);
-
   text-align: center;
   transition: 0.3s;
 }
@@ -325,14 +326,18 @@ section {
 }
 
 .educationCard .details{
+  margin-top: 5px;
   display: flex;
  justify-content: center;
  align-items: center;
  gap: 15px;
+ color: gray;
 }
 
 .educationCard{
-  margin-top: 20px;
+  width: 60%;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
   border: 1px solid rgba(255,255,255,0.1);
