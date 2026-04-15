@@ -312,6 +312,41 @@ section {
   box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
 }
 
+/* Education */
+.education{
+  margin-top: 40px;
+  font-size: 1.3rem;
+}
+
+.education p{
+  margin-top: 10px;
+  color: gray;
+  font-size: 19px;
+}
+
+.educationCard .details{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 15px;
+}
+
+.educationCard{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.educationCard:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+}
+
 
 /* Projects */
 .projects {
