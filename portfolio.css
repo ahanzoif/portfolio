@@ -455,10 +455,10 @@ section {
   transition: 0.3s;
 }
 
-footer {
+footer p {
   text-align: center;
   padding: 20px;
   background: rgba(42, 41, 43, 0.5);
   backdrop-filter: blur(10px);
-  font-size: 14px;
+  font-size: 18px;
 }
