@@ -245,8 +245,8 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 20px;
-  max-width: 800px;   /* overall width control */
-  margin: 30px auto; 
+  max-width: 800px; /* overall width control */
+  margin: 30px auto;
 }
 
 .aboutCard {
@@ -453,4 +453,12 @@ section {
     inset 0 0 10px rgba(0, 245, 212, 0.2);
   color: #e6ffff;
   transition: 0.3s;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(42, 41, 43, 0.5);
+  backdrop-filter: blur(10px);
+  font-size: 14px;
 }
