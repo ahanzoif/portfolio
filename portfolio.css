@@ -247,6 +247,7 @@ section {
   gap: 20px;
   max-width: 800px; /* overall width control */
   margin: 30px auto;
+  cursor: pointer;
 }
 
 .aboutCard {
@@ -293,6 +294,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(140px, 180px));
   justify-content: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 .skillCard {
@@ -347,6 +349,7 @@ section {
 .educationCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+  cursor: pointer;
 }
 
 /* Projects */
