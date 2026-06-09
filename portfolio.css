@@ -483,7 +483,29 @@ section {
   cursor: pointer;
 }
 .achievement_title{
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  min-height: 65px;
+}
+
+.achievement_title i {
+  color: lightgreen;
+  /* margin-right: 5px; */
+}
+
+.achievement_title::before,
+.achievement_title::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: lightgreen;
+  box-shadow: 0 0 8px rgba(144, 238, 144, 0.8);
 }
 
 .achievement_card {
