@@ -458,6 +458,18 @@ section {
   transition: 0.3s;
 }
 
+/* Achievement */
+.achievement p{
+  margin-top: 10px;
+  color: gray;
+  font-size: 19px;
+}
+
+.achievement_card{
+  
+}
+
+
 footer p {
   text-align: center;
   padding: 20px;
