@@ -465,8 +465,13 @@ section {
   font-size: 19px;
 }
 
-.achievement_card{
-  
+.achievements_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px; /* overall width control */
+  margin: 30px auto;
+  cursor: pointer;
 }
 
 
