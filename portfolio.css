@@ -478,12 +478,12 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 800px; /* overall width control */
+  max-width: 800px; 
   margin: 30px auto;
   cursor: pointer;
 }
-.achievement_card{
-  font-size: 1rem;
+.achievement_title{
+  font-size: 1.3rem;
 }
 
 .achievement_card {
