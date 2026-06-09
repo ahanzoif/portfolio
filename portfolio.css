@@ -463,7 +463,7 @@ section {
   margin-top: 40px;
   font-size: 1.3rem;
 }
-.subheading{
+.subheading {
   margin-top: 10px;
   color: gray;
   font-size: 18px;
@@ -478,11 +478,11 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 800px; 
+  max-width: 800px;
   margin: 30px auto;
   cursor: pointer;
 }
-.achievement_title{
+.achievement_title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 12px;
@@ -523,6 +523,127 @@ section {
   box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
 }
 
+/* Currently Learning */
+.currently_learning {
+  margin-top: 40px;
+  font-size: 1.3rem;
+}
+
+.learning_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.learning_card {
+  padding: 25px 15px;
+  border-radius: 20px;
+  min-height: 380px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.learning_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+}
+.learning{
+  margin-top: 10px;
+  color: gray;
+  font-size: 18px;
+}
+.learning_icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.learning_card h3 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+.learning_card p {
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+.learning_card.cpp {
+  border-color: #4ade80;
+}
+
+.learning_card.javascript {
+  border-color: #facc15;
+}
+.learning_card.git {
+  border-color: #F05032;
+}
+.learning_card.web {
+  border-color: #38bdf8;
+}
+.learning_card.n8n {
+  border-color: #ec4899;
+}
+.title_line {
+  width: 60px;
+  height: 2px;
+  margin: 12px auto 20px;
+  position: relative;
+  background: currentColor;
+}
+
+.title_line::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  position: absolute;
+  right: -10px;
+  top: -2px;
+}
+.cpp .title_line {
+  color: #4ade80;
+}
+
+.javascript .title_line {
+  color: #facc15;
+}
+
+.git .title_line {
+  color: #F05032;
+}
+
+.web .title_line {
+  color: #38bdf8;
+}
+
+.n8n .title_line {
+  color: #ec4899;
+}
+.learning_icon.cpp {
+  color: #4ade80;
+}
+.learning_icon.javascript {
+  color: #facc15;
+}
+.learning_icon.git {
+  color: #F05032;
+}
+.fa-github {
+  color: #FFFFFF; 
+}
+.learning_icon.web {
+  color: #38bdf8;
+}
+.learning_icon.n8n {
+  color: #ec4899;
+}
+
+/* Footer */
 footer p {
   text-align: center;
   padding: 20px;
