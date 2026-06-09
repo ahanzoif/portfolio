@@ -459,13 +459,22 @@ section {
 }
 
 /* Achievement */
-.achievement p{
+.achievement {
+  margin-top: 40px;
+  font-size: 1.3rem;
+}
+.subheading{
   margin-top: 10px;
   color: gray;
-  font-size: 19px;
+  font-size: 18px;
+}
+.achievement_card p {
+  margin-top: 10px;
+  color: gray;
+  font-size: 16px;
 }
 
-.achievements_grid{
+.achievements_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -473,7 +482,24 @@ section {
   margin: 30px auto;
   cursor: pointer;
 }
+.achievement_card{
+  font-size: 1rem;
+}
 
+.achievement_card {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #777;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.achievement_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
+}
 
 footer p {
   text-align: center;
