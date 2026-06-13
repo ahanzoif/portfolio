@@ -643,6 +643,16 @@ section {
   color: #ec4899;
 }
 
+/* Tech Journey Timeline  */
+.timeline{
+font-size: 1.3rem;
+margin-top: 40px;
+}
+.timeline p{
+  color: gray;
+  margin-top: 10px;
+}
+
 /* Footer */
 footer p {
   text-align: center;
