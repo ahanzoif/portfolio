@@ -553,7 +553,7 @@ section {
   transform: translateY(-10px);
   box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
 }
-.learning{
+.learning {
   margin-top: 10px;
   color: gray;
   font-size: 18px;
@@ -579,7 +579,7 @@ section {
   border-color: #facc15;
 }
 .learning_card.git {
-  border-color: #F05032;
+  border-color: #f05032;
 }
 .learning_card.web {
   border-color: #38bdf8;
@@ -614,7 +614,7 @@ section {
 }
 
 .git .title_line {
-  color: #F05032;
+  color: #f05032;
 }
 
 .web .title_line {
@@ -631,10 +631,10 @@ section {
   color: #facc15;
 }
 .learning_icon.git {
-  color: #F05032;
+  color: #f05032;
 }
 .fa-github {
-  color: #FFFFFF; 
+  color: #ffffff;
 }
 .learning_icon.web {
   color: #38bdf8;
@@ -644,13 +644,77 @@ section {
 }
 
 /* Tech Journey Timeline  */
-.timeline{
-font-size: 1.3rem;
-margin-top: 40px;
+.timeline {
+  font-size: 1.3rem;
+  margin-top: 40px;
 }
-.timeline p{
+.timeline p {
   color: gray;
   margin-top: 10px;
+}
+.timeline_grid {
+  position: relative;
+  width: 100%;
+}
+.timeline_grid::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #8ef58a;
+  box-shadow: 0 0 15px #8ef58a;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.timeline_card {
+  width: 45%;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.3s;
+}
+.timeline_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,245,212,0.3);
+}
+.timeline_item {
+  position: relative;
+  margin: 50px 0;
+}
+.left .timeline_card {
+  margin-right: 60px;
+}
+
+.right .timeline_card {
+  margin-left: 60px;
+}
+.timeline_card span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8ef58a;
+  margin-bottom: 10px;
+}
+.timeline_item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8ef58a;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px #8ef58a;
 }
 
 /* Footer */
