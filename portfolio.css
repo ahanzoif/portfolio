@@ -361,10 +361,10 @@ section {
 
 .projects_container {
   margin-top: 2rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
 }
 
 .project_card {
@@ -969,4 +969,136 @@ footer p {
   background: rgba(42, 41, 43, 0.5);
   backdrop-filter: blur(10px);
   font-size: 18px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav_right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .name {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .summary {
+    max-width: 100%;
+  }
+
+  .buttonGroup,
+  .intrest {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .aboutGrid,
+  .achievements_grid,
+  .experience_container {
+    grid-template-columns: 1fr;
+  }
+
+  .educationCard {
+    width: 100%;
+  }
+
+  .learning_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience_right {
+    grid-template-columns: 1fr;
+  }
+
+  .experience_right .exp_card:last-child {
+    grid-column: auto;
+  }
+
+  .timeline_container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .timeline_grid::before {
+    left: 20px;
+  }
+
+  .timeline_item {
+    justify-content: flex-start;
+  }
+
+  .timeline_item::before {
+    left: 20px;
+    transform: none;
+  }
+
+  .left .timeline_card,
+  .right .timeline_card {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .timeline_card {
+    width: 100%;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .contactItem {
+    width: 100%;
+  }
+
+  /* Projects - CSS Grid */
+  .projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+  }
+
+  .project_card {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+  }
+
+  .learning_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill_Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav_right {
+    gap: 12px;
+  }
 }
