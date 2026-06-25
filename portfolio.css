@@ -643,78 +643,321 @@ section {
   color: #ec4899;
 }
 
-/* Tech Journey Timeline  */
-.timeline {
-  font-size: 1.3rem;
+/* ===========================
+   Experience
+=========================== */
+
+.experience {
   margin-top: 40px;
+  font-size: 1.3rem;
 }
-.timeline p {
-  color: gray;
+
+.experience .subtitle {
   margin-top: 10px;
+  color: gray;
+  font-size: 18px;
 }
+
+.experience_container {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Left Card */
+
+.experience_left {
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.experience_left:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+}
+
+.exp_tag {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background: rgba(142, 245, 138, 0.15);
+  border: 1px solid #8ef58a;
+  color: #8ef58a;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+.experience_left h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.experience_left p {
+  color: #cfcfcf;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Stats */
+
+.exp_stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.exp_stats div {
+  padding: 15px 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.exp_stats h4 {
+  font-size: 2rem;
+  color: #8ef58a;
+  margin-bottom: 5px;
+}
+
+.exp_stats span {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+}
+
+/* Right */
+
+.experience_right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Last card full width */
+
+.experience_right .exp_card:last-child {
+  grid-column: 1 / -1;
+}
+
+/* Cards */
+
+.exp_card {
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: left;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp_card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #8ef58a;
+}
+
+.exp_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+}
+
+.exp_card h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.exp_card h3 i {
+  color: #8ef58a;
+}
+
+.exp_card span {
+  display: block;
+  color: #8ef58a;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.exp_card p {
+  color: #cfcfcf;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/*Tech Journey Timeline*/
+
+.timeline {
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+
+.timeline p {
+  margin-top: 10px;
+  color: gray;
+  font-size: 18px;
+}
+
+/* Big Glass Container */
+
+.timeline_container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 35px auto 0;
+  padding: 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.08);
+}
+
+/* Timeline */
+
 .timeline_grid {
   position: relative;
   width: 100%;
 }
+
 .timeline_grid::before {
   content: "";
   position: absolute;
   left: 50%;
   top: 0;
-  width: 4px;
+  transform: translateX(-50%);
+  width: 3px;
   height: 100%;
   background: #8ef58a;
-  box-shadow: 0 0 15px #8ef58a;
-}
-.left {
-  display: flex;
-  justify-content: flex-start;
-}
-.right {
-  display: flex;
-  justify-content: flex-end;
-}
-.timeline_card {
-  width: 45%;
-  padding: 20px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  transition: 0.3s;
-}
-.timeline_card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0,245,212,0.3);
-}
-.timeline_item {
-  position: relative;
-  margin: 50px 0;
-}
-.left .timeline_card {
-  margin-right: 60px;
+  box-shadow: 0 0 10px rgba(142, 245, 138, 0.8);
 }
 
-.right .timeline_card {
-  margin-left: 60px;
+.timeline_item {
+  position: relative;
+  display: flex;
+  margin: 22px 0;
 }
-.timeline_card span {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #8ef58a;
-  margin-bottom: 10px;
+
+.left {
+  justify-content: flex-start;
 }
+
+.right {
+  justify-content: flex-end;
+}
+
+/* Timeline Dot */
+
 .timeline_item::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: 30px;
-  width: 20px;
-  height: 20px;
+  top: 28px;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: #8ef58a;
-  transform: translateX(-50%);
-  box-shadow: 0 0 15px #8ef58a;
+  border: 4px solid #243b55;
+  box-shadow: 0 0 12px rgba(142, 245, 138, 0.9);
+  z-index: 2;
+}
+
+/* Timeline Card */
+
+.timeline_card {
+  width: 320px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+/* Accent Line */
+
+.timeline_card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #8ef58a;
+}
+
+/* Card Spacing */
+
+.left .timeline_card {
+  margin-right: 25px;
+}
+
+.right .timeline_card {
+  margin-left: 25px;
+}
+
+/* Hover */
+
+.timeline_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+}
+
+/* Year Badge */
+
+.timeline_card span {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid #8ef58a;
+  background: rgba(142, 245, 138, 0.12);
+  color: #8ef58a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Title */
+
+.timeline_card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.timeline_card h3 i {
+  color: #8ef58a;
+}
+
+/* Description */
+
+.timeline_card p {
+  color: #c8c8c8;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 /* Footer */
