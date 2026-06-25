@@ -1102,3 +1102,98 @@ footer p {
     gap: 12px;
   }
 }
+
+/* ===========================
+   Premium Additions
+=========================== */
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: #8ef58a;
+  z-index: 9999;
+  transition: width 0.2s linear;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141e30;
+  color: #fff;
+  font-size: 1.5rem;
+  z-index: 9998;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+#loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #8ef58a;
+  color: #111;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+/* Back To Top */
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #8ef58a;
+  color: #111;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: 0.3s;
+  z-index: 1000;
+}
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Better card hover */
+.aboutCard:hover,
+.skillCard:hover,
+.educationCard:hover,
+.project_card:hover,
+.achievement_card:hover,
+.learning_card:hover,
+.exp_card:hover,
+.timeline_card:hover {
+  box-shadow: 0 12px 30px rgba(0, 245, 212, 0.25);
+}
+
+/* Focus styles */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #8ef58a;
+  outline-offset: 4px;
+}
