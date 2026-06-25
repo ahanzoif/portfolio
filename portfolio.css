@@ -468,18 +468,18 @@ section {
   gap: 12px;
   transition: 0.3s;
   backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.contactItem svg{
-  width:22px;
-  height:22px;
-  flex-shrink:0;
+.contactItem svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
 }
 
-.contactItem span{
-  font-size:16px;
-  font-weight:500;
+.contactItem span {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .contactItem:hover {
