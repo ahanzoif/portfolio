@@ -1,674 +1,517 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Protfolio</title>
-    <link rel="stylesheet" href="portfolio.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <div class="nav_left">
-          <h1>&lt;Kaif x Ahan/&gt;</h1>
-        </div>
-
-        <div class="nav_right">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#skill">Skills</a>
-          <a href="#projects">Projects</a>
-          <!-- <a href="#certificate">Certification</a> -->
-          <a href="#contact">Contact</a>
-          <a href="assets/resume.pdf" download="Md_Kaif_Resume">Resume</a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="name">
-        <div class="leftSection">
-          <h1>Hey there I'm <span>Md Kaif</span> aka <span>Ahan Zoif</span></h1>
-
-          <ul class="intrest">
-            <li>Web Developer</li>
-            <li>
-              <a href="https://www.youtube.com/@thebytebusteryt"
-                >Content Creator</a
-              >
-            </li>
-            <li><a href="https://www.aimt.edu.in/">B.Tech Student</a></li>
-          </ul>
-
-          <p class="summary">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Md Kaif | Portfolio</title>
+<link href="portfolio.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<meta content="Md Kaif | Web Developer, C++ Learner, Content Creator Portfolio" name="description"/></head>
+<body><div id="progress-bar"></div><div id="loader">Loading...</div>
+<!-- Header -->
+<header id="home">
+<nav>
+<div class="nav_left">
+<h1>&lt;Kaif x Ahan/&gt;</h1>
+</div>
+<div class="nav_right">
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skill">Skills</a>
+<a href="#projects">Projects</a>
+<!-- <a href="#certificate">Certification</a> -->
+<a href="#contact">Contact</a>
+<a download="Md_Kaif_Resume" href="assets/resume.pdf">Resume</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="name">
+<div class="leftSection">
+<h1>Hey there I'm <span>Md Kaif</span> aka <span>Ahan Zoif</span></h1>
+<ul class="intrest">
+<li>Web Developer</li>
+<li>
+<a href="https://www.youtube.com/@thebytebusteryt">Content Creator</a>
+</li>
+<li><a href="https://www.aimt.edu.in/">B.Tech Student</a></li>
+</ul>
+<p class="summary">
             Interested in AI, modern technologies, and web development, focused
             on learning by building and improving problem-solving skills.
             Currently studying at Ambalika Institute of Management and
             Technology, aiming to write clean, efficient code and build
             user-friendly solutions.
           </p>
-        </div>
-
-        <div class="rightSection">
-          <img src="assets/profile.jpeg" alt="Md Kaif aka Ahan Zoif" />
-        </div>
-
-        <div class="buttonGroup">
-          <a href="#projects" class="namebutton">View Projects</a>
-          <a
-            href="assets/resume.pdf"
-            download="Md_Kaif_Resume"
-            class="resumebutton"
-            >Download Resume</a
-          >
-          <a href="#contact" class="contactButton">Contact</a>
-        </div>
-      </section>
-    </main>
-
-    <!-- About-->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>A glimpse into my journey</p>
-
-      <div class="aboutGrid">
-        <div class="aboutCard">
-          <i class="fas fa-graduation-cap"></i>
+</div>
+<div class="rightSection">
+<img alt="Md Kaif aka Ahan Zoif" loading="lazy" src="assets/profile.jpeg"/>
+</div>
+<div class="buttonGroup">
+<a class="namebutton" href="#projects">View Projects</a>
+<a class="resumebutton" download="Md_Kaif_Resume" href="assets/resume.pdf">Download Resume</a>
+<a class="contactButton" href="#contact">Contact</a>
+</div>
+</section>
+</main>
+<!-- About-->
+<section class="about" id="about">
+<h2>About Me</h2>
+<p>A glimpse into my journey</p>
+<div class="aboutGrid">
+<div class="aboutCard">
+<i class="fas fa-graduation-cap"></i>
           B.Tech Student
           <p>2nd Year • Ambalika Institute of Management and Technology</p>
-        </div>
-        <div class="aboutCard">
-          <i class="fas fa-code"></i>
+</div>
+<div class="aboutCard">
+<i class="fas fa-code"></i>
           Web Developer
           <p>Creating responsive and user-friendly web interfaces</p>
-        </div>
-        <div class="aboutCard">
-          <i class="fas fa-brain"></i>
+</div>
+<div class="aboutCard">
+<i class="fas fa-brain"></i>
           DSA Learner
           <p>Practicing problem-solving using C++ and logic building</p>
-        </div>
-        <div class="aboutCard">
-          <i class="fas fa-video"></i>
+</div>
+<div class="aboutCard">
+<i class="fas fa-video"></i>
           Tech Content Creator
           <p>Sharing tech knowledge and learning through content</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skill" class="skill">
-      <h2>Skills.</h2>
-      <p>My Tech Stack</p>
-      <!-- Development -->
-      <div class="skillCategory">
-        <h3>Development</h3>
-
-        <div class="skill_Container">
-          <div class="skillCard">
-            <div class="icon">
-              <!-- HTML -->
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#E44D26">
-                <path d="M3 2l1.5 17L12 22l7.5-3L21 2H3z" />
-                <text
-                  x="50%"
-                  y="60%"
-                  text-anchor="middle"
-                  fill="white"
-                  font-size="8"
-                >
+</div>
+</div>
+</section>
+<!-- Skills -->
+<section class="skill" id="skill">
+<h2>Skills.</h2>
+<p>My Tech Stack</p>
+<!-- Development -->
+<div class="skillCategory">
+<h3>Development</h3>
+<div class="skill_Container">
+<div class="skillCard">
+<div class="icon">
+<!-- HTML -->
+<svg fill="#E44D26" height="24" viewbox="0 0 24 24" width="24">
+<path d="M3 2l1.5 17L12 22l7.5-3L21 2H3z"></path>
+<text fill="white" font-size="8" text-anchor="middle" x="50%" y="60%">
                   H5
                 </text>
-              </svg>
-            </div>
-            <p>HTML</p>
-          </div>
-          <div class="skillCard">
-            <div class="icon">
-              <!-- CSS -->
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#264DE4">
-                <path d="M3 2l1.5 17L12 22l7.5-3L21 2H3z" />
-                <text
-                  x="50%"
-                  y="60%"
-                  text-anchor="middle"
-                  fill="white"
-                  font-size="8"
-                >
+</svg>
+</div>
+<p>HTML</p>
+</div>
+<div class="skillCard">
+<div class="icon">
+<!-- CSS -->
+<svg fill="#264DE4" height="24" viewbox="0 0 24 24" width="24">
+<path d="M3 2l1.5 17L12 22l7.5-3L21 2H3z"></path>
+<text fill="white" font-size="8" text-anchor="middle" x="50%" y="60%">
                   C3
                 </text>
-              </svg>
-            </div>
-            <p>CSS</p>
-          </div>
-          <div class="skillCard">
-            <div class="icon">
-              <!-- C -->
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#00599C">
-                <rect width="24" height="24" rx="5" />
-                <text
-                  x="50%"
-                  y="60%"
-                  text-anchor="middle"
-                  fill="white"
-                  font-size="10"
-                >
+</svg>
+</div>
+<p>CSS</p>
+</div>
+<div class="skillCard">
+<div class="icon">
+<!-- C -->
+<svg fill="#00599C" height="24" viewbox="0 0 24 24" width="24">
+<rect height="24" rx="5" width="24"></rect>
+<text fill="white" font-size="10" text-anchor="middle" x="50%" y="60%">
                   C
                 </text>
-              </svg>
-            </div>
-            <p>C</p>
-          </div>
-          <div class="skillCard">
-            <div class="icon">
-              <!-- C++ -->
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#004482">
-                <rect width="24" height="24" rx="5" />
-                <text
-                  x="50%"
-                  y="60%"
-                  text-anchor="middle"
-                  fill="white"
-                  font-size="8"
-                >
+</svg>
+</div>
+<p>C</p>
+</div>
+<div class="skillCard">
+<div class="icon">
+<!-- C++ -->
+<svg fill="#004482" height="24" viewbox="0 0 24 24" width="24">
+<rect height="24" rx="5" width="24"></rect>
+<text fill="white" font-size="8" text-anchor="middle" x="50%" y="60%">
                   C++
                 </text>
-              </svg>
-            </div>
-            <p>C++</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tools -->
-      <div class="skillCategory">
-        <h3>Tools</h3>
-        <div class="skill_Container">
-          <div class="skillCard">
-            <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#00C4CC">
-                <circle cx="12" cy="12" r="10" />
-                <text
-                  x="50%"
-                  y="55%"
-                  text-anchor="middle"
-                  fill="white"
-                  font-size="10"
-                  font-family="Arial"
-                >
+</svg>
+</div>
+<p>C++</p>
+</div>
+</div>
+</div>
+<!-- Tools -->
+<div class="skillCategory">
+<h3>Tools</h3>
+<div class="skill_Container">
+<div class="skillCard">
+<div class="icon">
+<svg fill="#00C4CC" height="24" viewbox="0 0 24 24" width="24">
+<circle cx="12" cy="12" r="10"></circle>
+<text fill="white" font-family="Arial" font-size="10" text-anchor="middle" x="50%" y="55%">
                   C
                 </text>
-              </svg>
-            </div>
-            <p>Canva</p>
-          </div>
-          <div class="skillCard">
-            <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
-                <rect x="3" y="6" width="18" height="12" rx="2" />
-                <text
-                  x="50%"
-                  y="55%"
-                  text-anchor="middle"
-                  fill="white"
-                  font-size="8"
-                >
+</svg>
+</div>
+<p>Canva</p>
+</div>
+<div class="skillCard">
+<div class="icon">
+<svg fill="black" height="24" viewbox="0 0 24 24" width="24">
+<rect height="12" rx="2" width="18" x="3" y="6"></rect>
+<text fill="white" font-size="8" text-anchor="middle" x="50%" y="55%">
                   CC
                 </text>
-              </svg>
-            </div>
-            <p>CapCut</p>
-          </div>
-          <div class="skillCard">
-            <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#9999FF">
-                <rect width="24" height="24" rx="5" />
-                <text
-                  x="50%"
-                  y="55%"
-                  text-anchor="middle"
-                  fill="#000"
-                  font-size="10"
-                >
+</svg>
+</div>
+<p>CapCut</p>
+</div>
+<div class="skillCard">
+<div class="icon">
+<svg fill="#9999FF" height="24" viewbox="0 0 24 24" width="24">
+<rect height="24" rx="5" width="24"></rect>
+<text fill="#000" font-size="10" text-anchor="middle" x="50%" y="55%">
                   Pr
                 </text>
-              </svg>
-            </div>
-            <p>Premiere Pro</p>
-          </div>
-          <div class="skillCard">
-            <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#001E36">
-                <rect width="24" height="24" rx="5" />
-                <text
-                  x="50%"
-                  y="55%"
-                  text-anchor="middle"
-                  fill="#31A8FF"
-                  font-size="10"
-                >
+</svg>
+</div>
+<p>Premiere Pro</p>
+</div>
+<div class="skillCard">
+<div class="icon">
+<svg fill="#001E36" height="24" viewbox="0 0 24 24" width="24">
+<rect height="24" rx="5" width="24"></rect>
+<text fill="#31A8FF" font-size="10" text-anchor="middle" x="50%" y="55%">
                   Lr
                 </text>
-              </svg>
-            </div>
-            <p>Lightroom</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="education">
-      <h2>Education.</h2>
-      <p>My learning journey</p>
-
-      <div class="educationCard">
-        <h3>
-          <i class="fas fa-graduation-cap"></i> Bachelors of Technology (B.Tech)
+</svg>
+</div>
+<p>Lightroom</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Education -->
+<section class="education">
+<h2>Education.</h2>
+<p>My learning journey</p>
+<div class="educationCard">
+<h3>
+<i class="fas fa-graduation-cap"></i> Bachelors of Technology (B.Tech)
         </h3>
-        <p>Ambalika Institute of Management and Technology</p>
-        <div class="details">
-          <i class="fa-solid fa-location-dot"></i> Lucknow, India
+<p>Ambalika Institute of Management and Technology</p>
+<div class="details">
+<i class="fa-solid fa-location-dot"></i> Lucknow, India
           <i class="fa-solid fa-calendar"></i> 2024 - Present
         </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-
-      <!-- Project 1 start here.... -->
-
-      <div class="projects_container">
-        <div class="project_card">
-          <a
-            href="https://www.aimt.edu.in/wp-content/uploads/2026/02/tech-it-jan-2026.pdf"
-            target="_blank"
-          >
-            <img src="assets/project1.jpg" alt="project" />
-          </a>
-
-          <div class="project_content">
-            <h3>College Magazine</h3>
-
-            <p>
+</div>
+</section>
+<!-- Projects -->
+<section class="projects" id="projects">
+<h2>Projects</h2>
+<!-- Project 1 start here.... -->
+<div class="projects_container">
+<div class="project_card">
+<a href="https://www.aimt.edu.in/wp-content/uploads/2026/02/tech-it-jan-2026.pdf" target="_blank">
+<img alt="project" loading="lazy" src="assets/project1.jpg"/>
+</a>
+<div class="project_content">
+<h3>College Magazine</h3>
+<p>
               Designed and created a college magazine including content writing,
               layout design, and visual presentation.
             </p>
-
-            <div class="project_buttons">
-              <a
-                href="https://www.aimt.edu.in/wp-content/uploads/2026/02/tech-it-jan-2026.pdf"
-                target="_blank"
-                >Live</a
-              >
-              <a
-                href="https://github.com/ahanzoif/it-technical-magazine-jan-2026"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
+<div class="project_buttons">
+<a href="https://www.aimt.edu.in/wp-content/uploads/2026/02/tech-it-jan-2026.pdf" target="_blank">Live</a>
+<a href="https://github.com/ahanzoif/it-technical-magazine-jan-2026" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 1 end here.... -->
+</section>
+<!-- <section id="certificate" class="certificate"></section> -->
+<!-- Achievements -->
+<section class="achievement">
+<h2>Achievements &amp; Activities</h2>
+<p class="subheading">Milestones in my journey.</p>
+<div class="achievements_grid">
+<div class="achievement_card">
+<div class="achievement_title">
+<i class="fas fa-shield-alt"></i> NCC Cadet
           </div>
-        </div>
-      </div>
-      <!-- Project 1 end here.... -->
-    </section>
-
-    <!-- <section id="certificate" class="certificate"></section> -->
-
-    <!-- Achievements -->
-    <section class="achievement">
-      <h2>Achievements & Activities</h2>
-      <p class="subheading">Milestones in my journey.</p>
-      <div class="achievements_grid">
-        <div class="achievement_card">
-          <div class="achievement_title">
-            <i class="fas fa-shield-alt"></i> NCC Cadet
-          </div>
-          <p>
+<p>
             Served as an NCC Cadet, gaining exposure to discipline, teamwork,
             and leadership activities.
           </p>
-        </div>
-        <div class="achievement_card">
-          <div class="achievement_title">
-            <i class="fas fa-user-secret"></i> Ethical Hacking
+</div>
+<div class="achievement_card">
+<div class="achievement_title">
+<i class="fas fa-user-secret"></i> Ethical Hacking
           </div>
-          <p>
+<p>
             Secured Runner-Up position for delivering an Ethical Hacking
             presentation at my college.
           </p>
-        </div>
-        <div class="achievement_card">
-          <div class="achievement_title">
-            <i class="fas fa-laptop-code"></i> Hackathon
+</div>
+<div class="achievement_card">
+<div class="achievement_title">
+<i class="fas fa-laptop-code"></i> Hackathon
           </div>
-          <p>
+<p>
             Participated in SIH and IEEE Ideathon, developing innovative
             solutions under strict time constraints as a member of Team Spirals.
           </p>
-        </div>
-        <div class="achievement_card">
-          <div class="achievement_title">
-            <i class="fas fa-book-open"></i> Contributor
+</div>
+<div class="achievement_card">
+<div class="achievement_title">
+<i class="fas fa-book-open"></i> Contributor
           </div>
-          <p>
+<p>
             Contributed to the creation of a college technical magazine, working
             on content writing, design, and technical presentation.
           </p>
-        </div>
-        <div class="achievement_card">
-          <div class="achievement_title">
-            <i class="fas fa-robot"></i> AI Summit
+</div>
+<div class="achievement_card">
+<div class="achievement_title">
+<i class="fas fa-robot"></i> AI Summit
           </div>
-          <p>
+<p>
             Attended the India AI Impact Summit 2026, exploring innovations in
             AI, technology, startups, and emerging industry trends.
           </p>
-        </div>
-        <div class="achievement_card">
-          <div class="achievement_title">
-            <i class="fas fa-video"></i> Content Creator
+</div>
+<div class="achievement_card">
+<div class="achievement_title">
+<i class="fas fa-video"></i> Content Creator
           </div>
-          <p>
+<p>
             Created and managed digital content for Baaghi Boyz (2018-2021) and
             The Byte Buster (2024-Present), building online communities and
             engaging audiences.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Currently Learning -->
-    <section class="currently_learning">
-      <h2>Currently Learning</h2>
-      <p class="learning">Currently Expanding My Technical Knowledge</p>
-      <div class="learning_grid">
-        <div class="learning_card cpp">
-          <div class="learning_icon cpp">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <h3>DSA using C++</h3>
-          <div class="title_line"></div>
-          <p>Learning fundamental data structures and algorithm using C++</p>
-        </div>
-
-        <div class="learning_card javascript">
-          <div class="learning_icon javascript">
-            <i class="fa-brands fa-js"></i>
-          </div>
-          <h3>Java Script</h3>
-          <div class="title_line"></div>
-          <p>
+</div>
+</div>
+</section>
+<!-- Currently Learning -->
+<section class="currently_learning">
+<h2>Currently Learning</h2>
+<p class="learning">Currently Expanding My Technical Knowledge</p>
+<div class="learning_grid">
+<div class="learning_card cpp">
+<div class="learning_icon cpp">
+<i class="fa-solid fa-code"></i>
+</div>
+<h3>DSA using C++</h3>
+<div class="title_line"></div>
+<p>Learning fundamental data structures and algorithm using C++</p>
+</div>
+<div class="learning_card javascript">
+<div class="learning_icon javascript">
+<i class="fa-brands fa-js"></i>
+</div>
+<h3>Java Script</h3>
+<div class="title_line"></div>
+<p>
             Building interactive and dynamic web experiences by learning core
             java script concept
           </p>
-        </div>
-
-        <div class="learning_card git">
-          <div class="learning_icon git">
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <h3>Git & GitHub</h3>
-          <div class="title_line"></div>
-          <p>
+</div>
+<div class="learning_card git">
+<div class="learning_icon git">
+<i class="fa-brands fa-git-alt"></i>
+<i class="fa-brands fa-github"></i>
+</div>
+<h3>Git &amp; GitHub</h3>
+<div class="title_line"></div>
+<p>
             Version control and collaboration using Git and GitHub for efficient
             project Management
           </p>
-        </div>
-
-        <div class="learning_card web">
-          <div class="learning_icon web">
-            <i class="fa-solid fa-globe"></i>
-          </div>
-          <h3>Web Development</h3>
-          <div class="title_line"></div>
-          <p>
+</div>
+<div class="learning_card web">
+<div class="learning_icon web">
+<i class="fa-solid fa-globe"></i>
+</div>
+<h3>Web Development</h3>
+<div class="title_line"></div>
+<p>
             Learning to build responsive and user-friendly websites using modern
             web technologies
           </p>
-        </div>
-
-        <div class="learning_card n8n">
-          <div class="learning_icon n8n">
-            <i class="fa-solid fa-diagram-project"></i>
-          </div>
-          <h3>n8n</h3>
-          <div class="title_line"></div>
-          <p>
+</div>
+<div class="learning_card n8n">
+<div class="learning_icon n8n">
+<i class="fa-solid fa-diagram-project"></i>
+</div>
+<h3>n8n</h3>
+<div class="title_line"></div>
+<p>
             Exploring workflow automation and integration by building smart
             workflows with n8n
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="experience">
-      <h2>Experience</h2>
-      <p class="subtitle">Beyond The Classroom</p>
-      <div class="experience_container">
-        <div class="experience_left">
-          <span class="exp_tag">2025-Present</span>
-          <h3>Building Through Experience</h3>
-          <p>
+</div>
+</div>
+</section>
+<!-- Experience -->
+<section class="experience">
+<h2>Experience</h2>
+<p class="subtitle">Beyond The Classroom</p>
+<div class="experience_container">
+<div class="experience_left">
+<span class="exp_tag">2025-Present</span>
+<h3>Building Through Experience</h3>
+<p>
             Through leadership, community initiatives, and event management,
             I've gained practical experience that complements my technical
             skills.
           </p>
-
-          <div class="exp_stats">
-            <div>
-              <h4>3+</h4>
-              <span>Roles</span>
-            </div>
-            <div>
-              <h4>5+</h4>
-              <span>Events</span>
-            </div>
-            <div>
-              <h4>1</h4>
-              <span>Magazine</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="experience_right">
-          <div class="exp_card">
-            <h3><i class="fa-solid fa-book-open"></i> Student Editor</h3>
-            <span>IT Technical Magazine • AIMT</span>
-            <p>
+<div class="exp_stats">
+<div>
+<h4>3+</h4>
+<span>Roles</span>
+</div>
+<div>
+<h4>5+</h4>
+<span>Events</span>
+</div>
+<div>
+<h4>1</h4>
+<span>Magazine</span>
+</div>
+</div>
+</div>
+<div class="experience_right">
+<div class="exp_card">
+<h3><i class="fa-solid fa-book-open"></i> Student Editor</h3>
+<span>IT Technical Magazine • AIMT</span>
+<p>
               Led the creation and publication of the IT Department Technical
               Magazine by coordinating content, editing articles, and managing
               the publication workflow.
             </p>
-          </div>
-
-          <div class="exp_card">
-            <h3><i class="fa-solid fa-calendar-check"></i> Event Organizer</h3>
-            <span>YUCI & Enigma Events</span>
-            <p>
+</div>
+<div class="exp_card">
+<h3><i class="fa-solid fa-calendar-check"></i> Event Organizer</h3>
+<span>YUCI &amp; Enigma Events</span>
+<p>
               Planned and managed technical workshops, handled promotions,
               registrations, and coordinated with speakers and participants.
             </p>
-          </div>
-
-          <div class="exp_card">
-            <h3><i class="fa-solid fa-rocket"></i> Founding Member</h3>
-            <span>Tarang Initiative</span>
-            <p>
+</div>
+<div class="exp_card">
+<h3><i class="fa-solid fa-rocket"></i> Founding Member</h3>
+<span>Tarang Initiative</span>
+<p>
               Co-founded Tarang, an initiative focused on technology learning
               and community engagement. Organized educational sessions, mentored
               students, and helped build collaborative learning opportunities.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tech Journey Timeline -->
-    <section class="timeline">
-      <h2>Tech Journey Timeline</h2>
-      <p>My Evolution Through Technology</p>
-
-      <div class="timeline_container">
-        <div class="timeline_grid">
-          <div class="timeline_item left">
-            <div class="timeline_card">
-              <span>2024</span>
-              <h3><i class="fa-solid fa-graduation-cap"></i> Started B.Tech</h3>
-              <p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Journey Timeline -->
+<section class="timeline">
+<h2>Tech Journey Timeline</h2>
+<p>My Evolution Through Technology</p>
+<div class="timeline_container">
+<div class="timeline_grid">
+<div class="timeline_item left">
+<div class="timeline_card">
+<span>2024</span>
+<h3><i class="fa-solid fa-graduation-cap"></i> Started B.Tech</h3>
+<p>
                 Began my Computer Science journey at AIMT with a strong interest
                 in technology.
               </p>
-            </div>
-          </div>
-
-          <div class="timeline_item right">
-            <div class="timeline_card">
-              <span>2024</span>
-              <h3><i class="fa-solid fa-code"></i> C Programming</h3>
-              <p>
+</div>
+</div>
+<div class="timeline_item right">
+<div class="timeline_card">
+<span>2024</span>
+<h3><i class="fa-solid fa-code"></i> C Programming</h3>
+<p>
                 Learned programming fundamentals and problem-solving using the C
                 language.
               </p>
-            </div>
-          </div>
-
-          <div class="timeline_item left">
-            <div class="timeline_card">
-              <span>2025</span>
-              <h3><i class="fa-solid fa-laptop-code"></i> Web Development</h3>
-              <p>
+</div>
+</div>
+<div class="timeline_item left">
+<div class="timeline_card">
+<span>2025</span>
+<h3><i class="fa-solid fa-laptop-code"></i> Web Development</h3>
+<p>
                 Started building responsive websites using HTML, CSS, and
                 JavaScript.
               </p>
-            </div>
-          </div>
-
-          <div class="timeline_item right">
-            <div class="timeline_card">
-              <span>2025</span>
-              <h3><i class="fa-solid fa-code"></i> DSA with C++</h3>
-              <p>
+</div>
+</div>
+<div class="timeline_item right">
+<div class="timeline_card">
+<span>2025</span>
+<h3><i class="fa-solid fa-code"></i> DSA with C++</h3>
+<p>
                 Focused on data structures, algorithms, and strengthening
                 problem-solving skills.
               </p>
-            </div>
-          </div>
-
-          <div class="timeline_item left">
-            <div class="timeline_card">
-              <span>2026</span>
-              <h3>
-                <i class="fa-solid fa-folder-open"></i> Real-World Projects
+</div>
+</div>
+<div class="timeline_item left">
+<div class="timeline_card">
+<span>2026</span>
+<h3>
+<i class="fa-solid fa-folder-open"></i> Real-World Projects
               </h3>
-              <p>
+<p>
                 Built portfolio projects and gained practical development
                 experience.
               </p>
-            </div>
-          </div>
-
-          <div class="timeline_item right">
-            <div class="timeline_card">
-              <span>2026</span>
-              <h3><i class="fa-solid fa-robot"></i> AI & Automation</h3>
-              <p>
+</div>
+</div>
+<div class="timeline_item right">
+<div class="timeline_card">
+<span>2026</span>
+<h3><i class="fa-solid fa-robot"></i> AI &amp; Automation</h3>
+<p>
                 Explored automation workflows with n8n and expanded my AI
                 development skills.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-
-      <div class="contactContainer">
-        <a href="mailto:kaifmd9006@gmail.com" class="contactItem">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-envelope"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="https://github.com/ahanzoif"
-          target="_blank"
-          class="contactItem"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-github"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/mdkaif/"
-          target="_blank"
-          class="contactItem"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-linkedin"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-            />
-          </svg>
-        </a>
-
-        <a href="tel:7050246268" class="contactItem">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-telephone"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 Md Kaif. All Rights Reserved</p>
-      <!-- <p>Built with HTML, CSS & JavaScript</p> -->
-    </footer>
-  </body>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="contact" id="contact">
+<h2>Contact</h2>
+<div class="contactContainer">
+<a class="contactItem" href="mailto:kaifmd9006@gmail.com">
+<svg class="bi bi-envelope" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+</svg>
+</a>
+<a class="contactItem" href="https://github.com/ahanzoif" target="_blank">
+<svg class="bi bi-github" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+</svg>
+</a>
+<a class="contactItem" href="https://www.linkedin.com/in/mdkaif/" target="_blank">
+<svg class="bi bi-linkedin" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+</svg>
+</a>
+<a class="contactItem" href="tel:7050246268">
+<svg class="bi bi-telephone" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
+</svg>
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<p>© 2026 Md Kaif. All Rights Reserved</p>
+<!-- <p>Built with HTML, CSS & JavaScript</p> -->
+</footer>
+<button id="theme-toggle">🌙</button><button id="backToTop">↑</button><script src="script.js"></script></body>
 </html>
