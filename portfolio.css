@@ -59,6 +59,28 @@ nav {
   color: lightgreen;
 }
 
+/* ===== Typing Effect Fix ===== */
+.typing-text {
+  min-height: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.typing-text::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .intrest {
   margin-top: 20px;
   padding: 0;
@@ -437,13 +459,27 @@ section {
   text-decoration: none;
   color: white;
   border: 1px solid #777;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 25px;
   width: 250px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   transition: 0.3s;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255,255,255,0.05);
+}
+
+.contactItem svg{
+  width:22px;
+  height:22px;
+  flex-shrink:0;
+}
+
+.contactItem span{
+  font-size:16px;
+  font-weight:500;
 }
 
 .contactItem:hover {
