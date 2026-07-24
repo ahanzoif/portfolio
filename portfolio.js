@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (loader) {
       setTimeout(() => {
-        loader.classList.add("hide");
+        loader.classList.add
       }, 600);
     }
   });
