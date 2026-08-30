@@ -1233,3 +1233,21 @@ button:focus-visible {
   outline: 2px solid #8ef58a;
   outline-offset: 4px;
 }
+
+
+.clock{
+   display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clock{
+    font-size: 40px;
+    background-color: #212121;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
