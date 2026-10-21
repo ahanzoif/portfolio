@@ -101,6 +101,7 @@ button:focus-visible {
   backdrop-filter: blur(18px);
 }
 .nav {
+  position: relative;
   min-height: 78px;
   display: flex;
   align-items: center;
@@ -148,12 +149,23 @@ button:focus-visible {
 }
 .nav-toggle {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 12px;
   background: var(--surface);
   color: var(--text);
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+.nav-toggle i {
+  pointer-events: none;
 }
 .hero {
   min-height: 660px;
@@ -898,6 +910,9 @@ h1 {
   .nav {
     min-height: 70px;
   }
+  .site-header {
+    isolation: isolate;
+  }
   .nav-toggle {
     display: grid;
     place-items: center;
@@ -905,6 +920,7 @@ h1 {
   .nav-links {
     display: none;
     position: absolute;
+    z-index: 5;
     top: calc(100% - 1px);
     left: 0;
     right: 0;
