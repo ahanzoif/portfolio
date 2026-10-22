@@ -307,12 +307,7 @@
             ></a>
           </article>
 
-          <article
-            class="project-card reveal"
-            id="reset-project-card"
-            style="cursor: pointer"
-            aria-label="Reset project card"
-          >
+          <article class="project-card reveal" id="reset-project-card">
             <div class="project-top">
               <span class="project-number">03 / PRODUCTIVITY</span>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -355,6 +350,14 @@
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
+
+            <a
+              class="card-hit-area"
+              href="https://reset-omega-neon.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Reset live preview"
+            ></a>
           </article>
 
           <article class="project-card reveal">
@@ -498,21 +501,5 @@
     <button id="backToTop" type="button" aria-label="Back to top">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
-
-    <script>
-      (() => {
-        const resetCard = document.getElementById("reset-project-card");
-        if (!resetCard) return;
-
-        resetCard.addEventListener("click", (event) => {
-          if (event.target.closest("a, button")) return;
-          window.open(
-            "https://reset-omega-neon.vercel.app/",
-            "_blank",
-            "noopener,noreferrer",
-          );
-        });
-      })();
-    </script>
   </body>
 </html>
